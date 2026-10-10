@@ -15,7 +15,7 @@ distance (x1, y1, z1) (x2, y2, z2) = (x1 - x2) ^ t + (y2 - y1) ^ t + (z1 - z2) ^
 	where
 		t = 2 :: Int
 
--- | Classifies a point
+-- | Classifies a point: returns the colour that is closest to a given
 classifier :: Point -> Colour
 classifier p = fst ( (\(DP t) -> t) (minimum (list_dist p)))
 
