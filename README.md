@@ -1,2 +1,2 @@
-# Colour-classificator
-Colour classificator based on euclidean distance
+# Colour-classifier
+Colour classifier based on euclidean distance
