@@ -7,7 +7,7 @@ type Point = (Int, Int, Int)
 -- | Datatype for Colours
 data Colour = Red | Blue | LightGreen | DarkGreen | Yellow | Purple | Pink | Brown | LightBlue | Orange | White | Black | Grey deriving (Show, Eq, Enum, Bounded)
 
--- | Creates a point (checks that numbers are in range)
+-- | Creates a point (checks that numbers are in range [0-255])
 newPoint :: Int -> Int -> Int -> Point
 newPoint x y z = (check x, check y, check z)
     where
